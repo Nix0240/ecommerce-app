@@ -12,6 +12,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
+     // eslint-disable-next-line react-hooks/exhaustive-deps
     const params = new URLSearchParams(location.search);
     const sortBy = params.get("sortBy") || "lowToHigh";
 
